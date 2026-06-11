@@ -86,9 +86,9 @@ class AdminLeaveController extends Controller
                     'description' => 'Admin approved leave'
                 ]);
 
-                $leave->employee->notify(
-                    new LeaveApprovedNotification()
-                );
+                // $leave->employee->notify(
+                //     new LeaveApprovedNotification()
+                // );
 
                 return $this->success(
                     null,
@@ -127,9 +127,9 @@ class AdminLeaveController extends Controller
                     'description' => 'Admin rejected leave'
                 ]);
 
-                $leave->employee->notify(
-                    new LeaveRejectedNotification()
-                );
+                // $leave->employee->notify(
+                //     new LeaveRejectedNotification()
+                // );
 
                 return $this->success(
                     null,
